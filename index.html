@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World</title>
+
+    <style>
+        .purple {
+            color: blueviolet;
+        }
+
+        .indigo {
+            color: indigo;
+        }
+    </style>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+</head>
+
+<body>  
+
+    <div class="container">
+        <!--div class="row justify-content-center text-center"!-->
+        <div class="col-md-4 col-md-offset-4">
+            <h1 class="indigo">Algumas tags html:</h1>
+            <p class="lead">
+                <b>Lorem ipsum dolor sit amet</b>, <del>consectetur</del> <ins>adipiscing</ins> elit. Sed leo nisl,
+                <s>mattis ut elementum et</s>, <u>malesuada sit amet arcu.</u> Integer 7<sup>2</sup> ac bibendum urna.
+                <small>Curabitur</small> sit amet vulputate ex, ac consequat ipsum.
+                Proin dignissim purus posuere efficitur euismod.
+                <span class="purple">Nullam at felis condimentum, interdum sem ac, tempus lacus.</span>
+                Nulla vitae ligula sed turpis venenatis molestie H<sub>2</sub>O.
+                Sed et magna justo. Maecenas nec justo at tortor porttitor semper:
+                <q cite="https://www.lipsum.com/feed/html">Integer sed tincidunt ex, a laoreet nibh.</q> Pellentesque facilisis suscipit leo.
+                Quisque rutrum tempus urna eu interdum. Mauris volutpat velit at purus sagittis efficitur.
+                Morbi finibus blandit justo, et blandit quam viverra quis.
+                Mauris vitae elit ut elit aliquet gravida ac id lorem.
+            </p>
+
+            <hr><!--Faz uma linha!-->
+
+            <blockquote cite="https://www.lipsum.com/feed/html">
+                <p>Fazendo um bloco de citação lorem ipsum</p>
+            </blockquote>
+
+            <h3>Take a look at this code:</h3>
+
+            <pre><code>
+def heapify(arr, n, i):
+    largest = i  # Initialize largest as root
+    l = 2 * i + 1     # left = 2*i + 1
+    r = 2 * i + 2     # right = 2*i + 2
+ 
+    # See if left child of root exists and is
+    # greater than root
+    if l < n and arr[largest] < arr[l]:
+        largest = l
+ 
+    # See if right child of root exists and is
+    # greater than root
+    if r < n and arr[largest] < arr[r]:
+        largest = r
+ 
+    # Change root, if needed
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]  # swap
+ 
+        # Heapify the root.
+        heapify(arr, n, largest)
+ 
+# The main function to sort an array of given size
+ 
+ 
+def heapSort(arr):
+    n = len(arr)
+ 
+    # Build a maxheap.
+    for i in range(n//2 - 1, -1, -1):
+        heapify(arr, n, i)
+ 
+    # One by one extract elements
+    for i in range(n-1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]  # swap
+        heapify(arr, i, 0)
+ 
+ 
+# Driver code
+arr = [12, 11, 13, 5, 6, 7]
+heapSort(arr)
+n = len(arr)
+print("Sorted array is")
+for i in range(n):
+    print("%d" % arr[i],end=" ")
+# This code is contributed by Mohit Kumra
+            </code></pre>
+
+        </div>
+    </div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
