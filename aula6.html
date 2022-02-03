@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula6</title>
+
+    <style>
+
+        table td, table th {
+            border: 1px solid #cccccc;
+            padding: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+
+            width: 100%;
+        }
+
+        table caption {
+            caption-side: bottom;
+            font-style: italic;
+            font-size: 23px;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        tfoot td {
+            background-color: rgb(203, 213, 226);
+        }
+
+        .greenish {
+            background-color: rgb(192, 229, 192);
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h2 class="titulo">Lorem Ipsum dolor sit amet</h2>
+
+    <div class="responsive-table">
+        <table>
+
+            <caption>Uma descrição para a tabela</caption>
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                    <th>Título 4</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                    <td>Corpo 4</td>
+                </tr>
+
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                    <td>Corpo 4</td>
+                </tr>
+
+                <tr>
+                    <td class="greenish" colspan="3" rowspan="3">Corpo 1</td>
+                    <td>Corpo 4</td>
+                </tr>
+
+                <tr>
+                    <td>Corpo 4</td>
+                </tr>
+
+                <tr>
+                    <td>Corpo 4</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+                <td>Footer 4</td>
+            </tfoot>
+
+        </table>
+    </div>
+
+</body>
+</html>
