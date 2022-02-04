@@ -72,3 +72,16 @@ input:checked + p {
     display: grid;
     align-self: center;
 }
+
+.text {
+    box-sizing: border-box;
+    background-color: #87cefa;
+    width: 95%;
+    height: 250px;
+    max-width: 1400px;
+    max-height: 100%;
+    overflow: auto;
+    margin: 50px auto 50px auto;
+    padding: 10px, 5px, 15px, 1px; 
+    border: 5px solid #8795FA;
+}
