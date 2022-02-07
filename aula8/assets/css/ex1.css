@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: fixed;   
+    width: 100%;
+    background-color: #000000;
+    height: 3rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: block;
+    max-width: 1200;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 1rem 1rem 0.8rem 1rem;
+    text-decoration: none;
+    transition: all 400ms ease-in-out
+}
+
+.nav ul li a:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.text {
+    background-color: #87cefa;
+    width: 95%;
+    height: 250px;
+    max-width: 1400px;
+    max-height: 100%;
+    overflow: auto;
+    margin: 50px auto 50px auto;
+    padding: 10px, 5px, 15px, 1px; 
+    border: 5px solid #8795FA;
+}
+
+.grid {
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid::after {  /*limpa os 2 lados da tela. Empurra pra baixo outros conteudos*/
+    content: "";
+    display: block;
+    clear: both; 
+}
+
+.grid .col {
+    width: 33.33%;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+
+.grid .col-content {
+    margin-top: 3.1rem;
+    background-color: rgb(55, 0, 255);
+    color: wheat;
+    width: 100%;
+    height: 100%;
+    box-shadow: -10px -10px 0 0 #C8FF00;
+}
+
+.nav ul li a:link {
+    color: #C8FF00;
+}
+
+.nav ul li a:visited {
+    color: #C8FF00;
+}
+
+.full-page {
+    padding: 73px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+.full-page-content {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
