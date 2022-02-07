@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+.pai1 .filha1 {
+    color: skyblue;
+}
+
+.pai2 > .filha2 { /* > significa que a classe filha tem q ser filha direta de pai */
+    color: teal;
+}
+
+.margin-20 {
+    margin: 20px 0 20px 0;
+}
+
+[meu-atributo] {
+    color: slateblue;
+}
+
+
+.transition {
+    transition: all 0.75s ease-in-out;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.transition:hover {
+    background-color: indigo;
+    color: mintcream;
+    cursor: pointer;
+}
+
+a:link {
+    color: #008000;
+}
+
+a:visited {
+    color: #800000;
+}
+
+input:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 200, 0.5);
+    outline: none;
+    border: 1px solid rgb(0, 0, 200);
+}
+
+input {
+    height:20px;
+    font-size:30px;
+}
+
+.centralize {
+    display: flexbox;
+}
+
+input:not(:checked) + p {
+    background-color: seagreen;
+}
+
+input:checked + p {
+    background-color: dodgerblue;
+}
+
+.justify {
+    display: grid;
+    align-self: center;
+}
+
